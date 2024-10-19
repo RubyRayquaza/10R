@@ -7,7 +7,7 @@ pros::MotorGroup right_motor_group({4, -5, 6}, pros::MotorGears::blue);
 lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
                               &right_motor_group, // right motor group
                               24, // 24 inch track width
-                              lemlib::Omniwheel::NEW_375, // using new 375" omnis
+                              lemlib::Omniwheel::NEW_375, // using new 3.75" omnis
                               400, // drivetrain rpm is 400
                               2 // horizontal drift is 2 (for now)
 );
