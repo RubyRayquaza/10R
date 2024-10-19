@@ -5,10 +5,12 @@ pros::MotorGroup right_motor_group({4, -5, 6}, pros::MotorGears::blue);
 
 // drivetrain settings
 lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
-    &right_motor_group, // right motor group
-    10, // 10 inch track width
-    lemlib::Omniwheel::NEW_4, // using new 4" omnis
-    360, // drivetrain rpm is 360
-    2 // horizontal drift is 2 (for now)
+                              &right_motor_group, // right motor group
+                              10, // 10 inch track width
+                              lemlib::Omniwheel::NEW_375, // using new 375" omnis
+                              400, // drivetrain rpm is 400
+                              2 // horizontal drift is 2 (for now)
 );
 
+// Track Width: 24"
+// Wheelbase: 24"
