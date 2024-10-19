@@ -1,1 +1,14 @@
+// left motors on ports 1, 2, 3; 1 & 3 are negative ports (backwards); uses blue motors (600 RPM)
+pros::MotorGroup left_motor_group({-1, 2, -3}, pros::MotorGears::blue);
+// right motors on ports 4, 5, 6; 5 is a negative port (backwards); uses blue motors (600 RPM)
+pros::MotorGroup right_motor_group({4, -5, 6}, pros::MotorGears::blue);
+
+// drivetrain settings
+lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
+    &right_motor_group, // right motor group
+    10, // 10 inch track width
+    lemlib::Omniwheel::NEW_4, // using new 4" omnis
+    360, // drivetrain rpm is 360
+    2 // horizontal drift is 2 (for now)
+);
 
