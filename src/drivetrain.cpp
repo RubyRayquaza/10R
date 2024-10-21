@@ -18,8 +18,8 @@ void Drivetrain::moveBackward(int velocity) {
 
 // Tank drive method to control motors based on joystick inputs
 void Drivetrain::tank(int leftY, int rightY) {
-    left_motors->move_velocity(leftY); // Forwards/backwards based on left joystick
-    right_motors->move_velocity(rightY); // Forwards/backwards based on right joystick
+    left_motors->move_velocity(leftY);
+    right_motors->move_velocity(rightY);
 }
 
 // Stop the motors
