@@ -1,8 +1,8 @@
 #ifndef CONTROLLER_HPP
 #define CONTROLLER_HPP
 
-#include "pros/adi.hpp"
-#include "pros/motors.hpp"
+#include "lib/pros/adi.hpp"
+#include "lib/pros/motors.hpp"
 #include "drivetrain.hpp"
 
 class Controller {
