@@ -1,17 +1,14 @@
-#ifndef PID_HPP
-#define PID_HPP
+#include "pid.hpp"
 
-class PID {
-public:
-    PID(double kp, double ki, double kd);
-    double calculate(double setpoint, double actual);
+// Constructor implementation
+PID::PID(double kp, double ki, double kd)
+    : kp(kp), ki(ki), kd(kd), integral(0), previous_error(0) {}
 
-private:
-    double kp;
-    double ki;
-    double kd;
-    double integral;
-    double previous_error;
-};
+double PID::calculate(double setpoint, double actual) {
+    double error = setpoint - actual;
+    integral += error;
+    double derivative = error - previous_error;
+    previous_error = error;
 
-#endif // PID_HPP
+    return (kp * error) + (ki * integral) + (kd * derivative);
+}
