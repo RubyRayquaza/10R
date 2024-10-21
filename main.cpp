@@ -10,6 +10,26 @@
 #include "include/drivetrain.hpp"
 #include "include/screen.hpp"
 
+/*
+
+ ___________ __________ 
+/_   \   _  \\______   \
+ |   /  /_\  \|       _/
+ |   \  \_/   \    |   \
+ |___|\_____  /____|_  /
+            \/       \/ 
+
+*/
+
+/**
+ * @file main.cpp
+ * @brief This file contains the main code for the robot's operation.
+ */
+
+/**
+ * @brief Structure that holds instances of all robot subsystems.
+ */
+
 // Initialize motor groups and drivetrain
 pros::MotorGroup left_motor_group({-1, 2, -3}, pros::MotorGears::blue);
 pros::MotorGroup right_motor_group({4, -5, 6}, pros::MotorGears::blue);
