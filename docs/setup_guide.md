@@ -10,3 +10,20 @@
    ```bash
    git clone https://github.com/your_username/robotics_project.git
    cd robotics_project
+
+prosv5 make
+
+
+### 3. `usage_guide.md`
+```markdown
+# Usage Guide
+
+## Running the Project
+To run the robot, upload the compiled code to your VEX controller using the PROS environment.
+
+Example command to run:
+```bash
+./robotics_project_executable [options]
+
+
+Feel free to adjust the content further based on specific details or features of your project!
