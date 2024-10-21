@@ -10,7 +10,6 @@ void Autonomous::run() {
     
     // Stopping drivetrain; auton complete
     drivetrain.stop(); // Stop the robot
-    pros::delay(500);  // Wait for half a second
 
     // Add more autonomous behaviors here
 }
