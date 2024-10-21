@@ -1,4 +1,4 @@
-# Robotics Project Documentation
+# 10R V5RC Project Documentation
 
 Welcome to the **10R V5RC '24-'25 Robot Codebase: High Stakes** documentation!
 
