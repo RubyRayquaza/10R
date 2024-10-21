@@ -1,6 +1,13 @@
+#include "pros/adi.hpp"
+#include "pros/motors.hpp"
+#include "pros/vision.hpp"
+#include "lemlib/Drivetrain.hpp"
+#include "lemlib/ControllerSettings.hpp"
+#include "lemlib/Chassis.hpp"
+
 // Track Width: 24"
 // Wheelbase: 24"
-// Horizontal Drift: N/A
+// Horizontal Drift: 2 (for drivetrain configuration)
 
 // left motors on ports 1, 2, 3; 1 & 3 are negative ports (backwards); uses blue motors (600 RPM)
 pros::MotorGroup left_motor_group({-1, 2, -3}, pros::MotorGears::blue);
