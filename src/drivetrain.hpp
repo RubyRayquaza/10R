@@ -6,7 +6,6 @@
 class Drivetrain {
 public:
     Drivetrain(pros::MotorGroup* leftMotors, pros::MotorGroup* rightMotors);
-
     void moveForward(int velocity);
     void moveBackward(int velocity);
     void tank(int leftY, int rightY);
