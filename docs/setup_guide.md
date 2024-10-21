@@ -9,7 +9,7 @@
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/robotics_project.git
+   git clone https://github.com/RubyRayquaza/10R.git
    cd robotics_project
 
 ### 3. `usage_guide.md`
