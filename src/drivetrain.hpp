@@ -5,18 +5,16 @@
 
 class Drivetrain {
 public:
-    // Constructor
     Drivetrain(pros::MotorGroup* leftMotors, pros::MotorGroup* rightMotors);
 
-    // Movement functions
     void moveForward(int velocity);
     void moveBackward(int velocity);
-    void tank(int leftY, int rightY); // Added tank drive method
+    void tank(int leftY, int rightY);
     void stop();
 
 private:
-    pros::MotorGroup* left_motors;   // Left motor group
-    pros::MotorGroup* right_motors;  // Right motor group
+    pros::MotorGroup* left_motors;
+    pros::MotorGroup* right_motors;
 };
 
 #endif // DRIVETRAIN_HPP
