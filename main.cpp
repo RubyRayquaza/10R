@@ -1,3 +1,4 @@
+#include "lib/lemlib/api.hpp"
 #include "lib/pros/adi.hpp"
 #include "lib/pros/motors.hpp"
 #include "lib/pros/vision.hpp"
