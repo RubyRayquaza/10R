@@ -8,7 +8,6 @@ This project involves developing a robot capable of autonomous navigation and co
 ## Table of Contents
 - [Setup Guide](setup_guide.md)
 - [Usage Guide](usage_guide.md)
-- [API Reference](api_reference.md) (if applicable)
 
 ## Getting Help
 If you have questions or need support, please open an issue in the GitHub repository.
