@@ -11,8 +11,7 @@ public:
     // Movement functions
     void moveForward(int velocity);
     void moveBackward(int velocity);
-    void turnLeft(int velocity);
-    void turnRight(int velocity);
+    void tank(int leftY, int rightY); // Added tank drive method
     void stop();
 
 private:
