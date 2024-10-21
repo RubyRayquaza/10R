@@ -2,7 +2,6 @@
 #define DRIVETRAIN_HPP
 
 #include "pros/motors.hpp"
-#include "lemlib/Drivetrain.hpp"
 
 class Drivetrain {
 public:
