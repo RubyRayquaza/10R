@@ -6,11 +6,12 @@
 
 class Controller {
 public:
-    Controller();
-    void update();
+    Controller(pros::E_CONTROLLER_ID id);
+    int getLeftY();
+    int getRightY();
 
 private:
-    // Add private members if needed
+    pros::Controller controller;
 };
 
 #endif // CONTROLLER_HPP
