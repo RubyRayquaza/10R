@@ -1,4 +1,4 @@
-#include "controller.hpp"
+#include "include/controller.hpp"
 
 Controller::Controller(pros::E_CONTROLLER_ID id, Drivetrain &drivetrain)
     : controller(id), drivetrain(drivetrain) {}
