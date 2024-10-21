@@ -3,21 +3,15 @@
 
 class PID {
 public:
-    PID(double kP, double kI, double kD);
-    
-    // Method to calculate the PID output
-    double calculate(double setpoint, double current);
-
-    // Method to reset the PID controller
-    void reset();
+    PID(double kp, double ki, double kd);
+    double calculate(double setpoint, double actual);
 
 private:
-    double kP; // Proportional gain
-    double kI; // Integral gain
-    double kD; // Derivative gain
-
-    double previous_error; // Previous error value
-    double integral;       // Integral of the error
+    double kp;
+    double ki;
+    double kd;
+    double integral;
+    double previous_error;
 };
 
 #endif // PID_HPP
