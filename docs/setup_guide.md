@@ -19,9 +19,5 @@
 ## Running the Project
 To run the robot, upload the compiled code to your VEX controller using the PROS environment.
 
-Example command to run:
-```bash
-./robotics_project_executable [options]
-
 
 Feel free to adjust the content further based on specific details or features of your project!
