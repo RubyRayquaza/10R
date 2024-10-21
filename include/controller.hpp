@@ -6,11 +6,11 @@
 
 class Controller {
 public:
-    Controller(pros::Controller &controller);
-    void driveTank(int leftY, int rightY);
+    Controller();
+    void update();
 
 private:
-    pros::Controller &controller;
+    // Add private members if needed
 };
 
 #endif // CONTROLLER_HPP
