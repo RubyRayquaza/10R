@@ -28,21 +28,8 @@ void opcontrol() {
         int leftY = controller.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
         int rightY = controller.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
 
-        // Control left motors
-        if (leftY > 0) {
-            drivetrain.moveForward(leftY); // Forward movement
-        } else if (leftY < 0) {
-            drivetrain.moveBackward(-leftY); // Backward movement
-        } else {
-            drivetrain.stop(); // Stop
-        }
-
-        // Handle right motor control similarly
-        if (rightY > 0) {
-            drivetrain.moveForward(rightY); // Forward movement for right
-        } else if (rightY < 0) {
-            drivetrain.moveBackward(-rightY); // Backward movement for right
-        }
+        // Use the tank method for movement
+        drivetrain.tank(leftY, rightY);
 
         pros::delay(25); // Delay to save resources
     }
