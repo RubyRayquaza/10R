@@ -1,9 +1,9 @@
 #include "lib/pros/adi.hpp"
 #include "lib/pros/motors.hpp"
 #include "lib/pros/vision.hpp"
-#include "lib/lemlib/Drivetrain.hpp"
-#include "lib/lemlib/ControllerSettings.hpp"
-#include "lib/lemlib/Chassis.hpp"
+#include "lib/lemlib/Drivetrain.hpp" // wrong file
+#include "lib/lemlib/ControllerSettings.hpp" // wrong file
+#include "lib/lemlib/chassis/chassis.hpp"
 #include "include/pid.hpp"
 #include "include/controller.hpp"
 #include "include/autonomous.hpp"
