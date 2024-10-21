@@ -1,17 +1,35 @@
-#ifndef DRIVETRAIN_HPP
-#define DRIVETRAIN_HPP
+#include "drivetrain.hpp"
 
-#include "pros/motors.hpp"
-#include "lemlib/Drivetrain.hpp"
-#include "lemlib/ControllerSettings.hpp"
+// Constructor implementation
+Drivetrain::Drivetrain(pros::MotorGroup* leftMotors, pros::MotorGroup* rightMotors)
+    : left_motors(leftMotors), right_motors(rightMotors) {}
 
-// Function prototypes
-void initializeDrivetrain();
+// Move forward at a specified velocity
+void Drivetrain::moveForward(int velocity) {
+    left_motors->move_velocity(velocity);
+    right_motors->move_velocity(velocity);
+}
 
-extern pros::MotorGroup left_motor_group;
-extern pros::MotorGroup right_motor_group;
-extern lemlib::Drivetrain drivetrain;
-extern lemlib::ControllerSettings lateral_controller;
-extern lemlib::ControllerSettings angular_controller;
+// Move backward at a specified velocity
+void Drivetrain::moveBackward(int velocity) {
+    left_motors->move_velocity(-velocity);
+    right_motors->move_velocity(-velocity);
+}
 
-#endif // DRIVETRAIN_HPP
+// Turn left at a specified velocity
+void Drivetrain::turnLeft(int velocity) {
+    left_motors->move_velocity(-velocity);
+    right_motors->move_velocity(velocity);
+}
+
+// Turn right at a specified velocity
+void Drivetrain::turnRight(int velocity) {
+    left_motors->move_velocity(velocity);
+    right_motors->move_velocity(-velocity);
+}
+
+// Stop the motors
+void Drivetrain::stop() {
+    left_motors->move_velocity(0);
+    right_motors->move_velocity(0);
+}
