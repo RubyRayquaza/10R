@@ -12,9 +12,6 @@
    git clone https://github.com/your_username/robotics_project.git
    cd robotics_project
 
-prosv5 make
-
-
 ### 3. `usage_guide.md`
 ```markdown
 # Usage Guide
