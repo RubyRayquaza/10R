@@ -4,10 +4,10 @@
 #include "lemlib/Drivetrain.hpp"
 #include "lemlib/ControllerSettings.hpp"
 #include "lemlib/Chassis.hpp"
-#include "drivetrain.hpp"
 #include "pid.hpp"
 #include "controller.hpp"
 #include "autonomous.hpp"
+#include "drivetrain.hpp"
 
 // Initialize motor groups and drivetrain
 pros::MotorGroup left_motor_group({-1, 2, -3}, pros::MotorGears::blue);
@@ -19,17 +19,17 @@ lemlib::ControllerSettings angular_controller(2, 0, 10, 3, 1, 100, 3, 500, 0);
 lemlib::Chassis chassis(drivetrain, lateral_controller, angular_controller);
 Autonomous autonomous(drivetrain); // Create an Autonomous instance
 
-// Create a Controller instance
-Controller controller(pros::E_CONTROLLER_MASTER, drivetrain);
-
 void initialize() {
     pros::lcd::initialize();
     chassis.calibrate();
 }
 
 void opcontrol() {
+    pros::Controller controller(pros::E_CONTROLLER_MASTER);
     while (true) {
-        controller.driveTank(); // Use the driveTank method from the Controller class
+        int leftY = controller.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+        int rightY = controller.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
+        chassis.tank(leftY, rightY);
         pros::delay(20);
     }
 }
@@ -37,12 +37,11 @@ void opcontrol() {
 int main() {
     initialize();
 
-    // Example condition to start autonomous
-    bool isAutonomous = true; // Change this to control mode selection
+    // Start autonomous code
+    autonomous.run();
 
-    if (isAutonomous) {
-        autonomous.run(); // Call the run method of the Autonomous class
-    } else {
+    // After autonomous, enter driver control
+    while (true) {
         opcontrol();
     }
 
