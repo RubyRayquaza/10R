@@ -1,10 +1,3 @@
-#include "pros/adi.hpp"
-#include "pros/motors.hpp"
-#include "pros/vision.hpp"
-#include "lemlib/Drivetrain.hpp"
-#include "lemlib/ControllerSettings.hpp"
-#include "lemlib/Chassis.hpp"
-
 // Track Width: 24"
 // Wheelbase: 24"
 // Horizontal Drift: 2 (for drivetrain configuration)
