@@ -15,6 +15,6 @@
    Follow the PROS documentation to set up the required libraries.
 
 ## 3. Build the Project
-   prosv5 make
+   N/A
 
 Feel free to adjust the content further based on specific details or features of your project!
