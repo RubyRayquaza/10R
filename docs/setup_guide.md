@@ -11,7 +11,7 @@
    git clone https://github.com/RubyRayquaza/10R.git
 
 ## 2. Install dependencies
-   Follow the PROS documentation to set up the required libraries.
+   Follow the [PROS](https://pros.cs.purdue.edu/) and [LemLib](https://lemlib.readthedocs.io/en/stable/) documentation to set up the required libraries.
 
 ## 3. Build the Project
    N/A
