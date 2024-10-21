@@ -5,6 +5,7 @@
 #include "lemlib/Drivetrain.hpp"
 #include "lemlib/ControllerSettings.hpp"
 #include "lemlib/Chassis.hpp"
+#include "drivetrain.hpp"
 
 // Define global motor groups and drivetrain settings
 pros::MotorGroup left_motor_group({-1, 2, -3}, pros::MotorGears::blue);
