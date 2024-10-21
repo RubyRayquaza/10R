@@ -3,11 +3,15 @@
 ## Running the Project
 
 To run the robot, upload the compiled code to your VEX controller using the PROS environment.
-Features
-Autonomous Navigation: The robot can navigate using built-in sensors.
-Manual Control: Use the joystick to control the robot’s movement with tank drive.
-Example Usage
-Here's a brief example of how to control the robot using the joystick.
+
+### Features
+
+**Autonomous Navigation:** The robot can navigate using built-in sensors.  
+**Manual Control:** Use the joystick to control the robot’s movement with tank drive.  
+
+### Example Usage
+Here's a brief example of how to control the robot using the joystick.  
+
 
 ```markdown
 #include "controller.hpp"
