@@ -4,6 +4,7 @@
 #include "lemlib/Drivetrain.hpp"
 #include "lemlib/ControllerSettings.hpp"
 #include "lemlib/Chassis.hpp"
+#include "drivetrain.hpp"
 #include "pid.hpp"
 #include "controller.hpp"
 #include "autonomous.hpp"
