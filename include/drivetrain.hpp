@@ -1,7 +1,7 @@
 #ifndef DRIVETRAIN_HPP
 #define DRIVETRAIN_HPP
 
-#include "pros/motors.hpp"
+#include "lib/pros/motors.hpp"
 
 class Drivetrain {
 public:
