@@ -8,12 +8,10 @@
 
 ## 1. Installation
    Clone the repository:
-   ```bash
    git clone https://github.com/RubyRayquaza/10R.git
    cd robotics_project
-   ```bash
 
-## 2. Install dependencies:
+## 2. Install dependencies
    Follow the PROS documentation to set up the required libraries.
 
 ## 3. Build the Project
