@@ -18,17 +18,17 @@ lemlib::ControllerSettings angular_controller(2, 0, 10, 3, 1, 100, 3, 500, 0);
 lemlib::Chassis chassis(drivetrain, lateral_controller, angular_controller);
 Autonomous autonomous(drivetrain); // Create an Autonomous instance
 
+// Create a Controller instance
+Controller controller(pros::E_CONTROLLER_MASTER, drivetrain);
+
 void initialize() {
     pros::lcd::initialize();
     chassis.calibrate();
 }
 
 void opcontrol() {
-    pros::Controller controller(pros::E_CONTROLLER_MASTER);
     while (true) {
-        int leftY = controller.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
-        int rightY = controller.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
-        chassis.tank(leftY, rightY);
+        controller.driveTank(); // Use the driveTank method from the Controller class
         pros::delay(20);
     }
 }
