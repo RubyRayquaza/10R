@@ -15,12 +15,8 @@ void Drivetrain::moveBackward(int velocity) {
 }
 
 void Drivetrain::tank(int leftY, int rightY) {
-    if (leftY == 0 && rightY == 0) {
-        stop(); // Stop if both joysticks are neutral
-    } else {
-        left_motors->move_velocity(leftY); // Forwards/backwards based on left joystick
-        right_motors->move_velocity(rightY); // Forwards/backwards based on right joystick
-    }
+    left_motors->move_velocity(leftY);
+    right_motors->move_velocity(rightY);
 }
 
 void Drivetrain::stop() {
