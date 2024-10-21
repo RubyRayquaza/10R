@@ -1,13 +1,13 @@
-#include "pros/adi.hpp"
-#include "pros/motors.hpp"
-#include "pros/vision.hpp"
-#include "lemlib/Drivetrain.hpp"
-#include "lemlib/ControllerSettings.hpp"
-#include "lemlib/Chassis.hpp"
-#include "pid.hpp"
-#include "controller.hpp"
-#include "autonomous.hpp"
-#include "drivetrain.hpp"
+#include "lib/pros/adi.hpp"
+#include "lib/pros/motors.hpp"
+#include "lib/pros/vision.hpp"
+#include "lib/lemlib/Drivetrain.hpp"
+#include "lib/lemlib/ControllerSettings.hpp"
+#include "lib/lemlib/Chassis.hpp"
+#include "src/pid.hpp"
+#include "src/controller.hpp"
+#include "src/autonomous.hpp"
+#include "src/drivetrain.hpp"
 
 // Initialize motor groups and drivetrain
 pros::MotorGroup left_motor_group({-1, 2, -3}, pros::MotorGears::blue);
