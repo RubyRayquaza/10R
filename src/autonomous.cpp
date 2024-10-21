@@ -1,17 +1,16 @@
 #include "autonomous.hpp"
 
-// Constructor implementation
 Autonomous::Autonomous(Drivetrain &drivetrain)
     : drivetrain(drivetrain) {}
 
 void Autonomous::run() {
-    // Move forward at a moderate speed
-    drivetrain.moveForward(50); // Move forward at a velocity of 50
-    pros::delay(2000); // Move for 2 seconds
-
-    // Stop the drivetrain
-    drivetrain.stop(); // Stop the drivetrain
+    // Example autonomous actions (Change later)
+    drivetrain.moveForward(100); // Move forward at a speed/velocity of 100
+    pros::delay(2000); // Delay for 2 seconds
+    
+    // Stopping drivetrain; auton complete
+    drivetrain.stop(); // Stop the robot
     pros::delay(500);  // Wait for half a second
 
-    // Optional: Add more autonomous behaviors here
+    // Add more autonomous behaviors here
 }
